@@ -36,7 +36,7 @@ Some would be:
 
 ___Datasets___: 
 
-Kitsune -  Network Intrusion Detection - Mirai Botnet Dataset: 
+1. Kitsune -  Network Intrusion Detection - Mirai Botnet Dataset: 
 
 A preprocessed (feature extracted) network capture from an IoT network, where the Mirai malware (botnet) begins infecting other devices and tries to call home to its Command & Control Server after approximately 1 million packets.   
 
@@ -48,11 +48,7 @@ https://www.kaggle.com/ymirsky/network-attack-dataset-kitsune?
 
 There are also other parts of this dataset representing other regular attacks such as injection, denial of service and man in the middle than can be used. 
 
-  
-
- 
-
-CAN Intrusion Dataset - https://ocslab.hksecurity.net/Dataset/CAN-intrusion-dataset 
+2. CAN Intrusion Dataset - https://ocslab.hksecurity.net/Dataset/CAN-intrusion-dataset 
 
 A dataset prepared by the authors of ref #3, in which they test a non-DNN based approach to detect network intrusion detection in CAN networks. I’ve emailed them for access to their dataset, they are yet to reply. 
 
@@ -62,11 +58,11 @@ On their site, they describe the dataset as follows:
 
 This dataset is a collection of 4.4 million CAN attack related messages divided according to a specific type of attack that they simulate. The attacks covered are: 
 
- CAN Denial of Service attacks: Attacks in which a 0x000 can ID message is injected into the network in short cycles. 
+1. CAN Denial of Service attacks: Attacks in which a 0x000 can ID message is injected into the network in short cycles. 
 
-Fuzzy attack: Injecting messages of spoofed random CAN ID and data values. 
+2. Fuzzy attack: Injecting messages of spoofed random CAN ID and data values. 
 
-Impersonation attack: Injecting messages impersonating nodes 
+3. Impersonation attack: Injecting messages impersonating nodes 
 
 These attack messages are mixed with regular state CAN messages that are normally exchanged in a network. 
 
