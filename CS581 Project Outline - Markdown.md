@@ -67,7 +67,7 @@ This dataset is a collection of 4.4 million CAN attack related messages divided 
 These attack messages are mixed with regular state CAN messages that are normally exchanged in a network. 
 
  
-![image](https://lh5.googleusercontent.com/qyKDBCcdiScHjHud3zEYes4FTOE9s_D4iBWqAK2ZsPmv-sAu-_m-dfiuajD942ZHHzARyD9uofU8LpKFcguEhWs5cxAjJsXyRXhdyzpEA2af95fSOQ=w1280)
+![Types of CAN Attacks](https://lh5.googleusercontent.com/qyKDBCcdiScHjHud3zEYes4FTOE9s_D4iBWqAK2ZsPmv-sAu-_m-dfiuajD942ZHHzARyD9uofU8LpKFcguEhWs5cxAjJsXyRXhdyzpEA2af95fSOQ=w1280)
 
 Figure 1: Types of CAN attack data [Image Ref](https://ocslab.hksecurity.net/Dataset/CAN-intrusion-dataset)
 
