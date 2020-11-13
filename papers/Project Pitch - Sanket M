@@ -1,0 +1,37 @@
+CS581 Project outline
+
+Application: Anomaly Detection on the Edge with RNNs, TCNs and Optimized TCNs
+
+Models used: RNNs(LSTMs/LSTM Autoencoders), TCNs, Quantized and Weight Pruned TCNs, (maybe HTMs)
+
+Implementations:
+TCNS are being hailed across the board as the successors to RNNs
+TCNs are not part of a standard keras/tensorflow API, so I will be working with a reference implementation based on the code provided by the authors of this paper(An Empirical Evaluation of Generic Convolutional and Recurrent Networks
+for Sequence Modeling)(reference: https://github.com/locuslab/TCN, https://github.com/philipperemy/keras-tcn#keras-tcn)
+LSTMs can be used via keras models, PyOD package's implementation or H2O models(PyOD - Python Outlier Detection Toolkit, H20 - Java based toolkit for data science)
+
+Optimizations:
+I will experiment with compression and optimization techniques covered in our assignment 3 - the Temporal Convolutional Networks in the reference code are implemented Conv1D layers,
+So almost all our techniques will be applicable.
+It will be interesting to apply these optimizations on RNNs and LSTMs. It is something we have not covered in class so I will have to understand the computations performed in these types of networks before implementing the optimizations and seeing how they affect the models.
+Some would be:
+- Quantization to float16
+- Weight sharing
+- Weight Pruning 
+
+Datasets:
+Kitsune -  Network Intrusion Detection - Mirai Botnet Dataset:
+A preprocessed (feature extracted) network capture from an IoT network, where the Mirai malware (botnet) begins infecting other devices and tries to call home to its Command & Control Server after approximately 1 million packets.  
+Size ~ 1.27 GB - 764,000 packets. 
+116 Columns(extracted statistical features for each packet extracted using the AfterImage feature extractor.) 
+https://www.kaggle.com/ymirsky/network-attack-dataset-kitsune?
+
+CAN Intrusion Dataset - https://ocslab.hksecurity.net/Dataset/CAN-intrusion-dataset
+
+
+
+Ref Papers:
+https://www.mdpi.com/2076-3417/9/15/3174/htm - DNNs in CAN network detection
+https://arxiv.org/pdf/1803.01271.pdf - TCNs being compared to RNNs for simple tasks
+https://www.ucalgary.ca/pst2017/files/pst2017/paper-67.pdf - CAN Dataset  
+
